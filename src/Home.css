@@ -1,0 +1,9 @@
+h1 {
+    text-align: center;
+}
+
+#banner {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: rgb(8, 245, 193);
+}
