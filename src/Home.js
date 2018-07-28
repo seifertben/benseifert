@@ -12,22 +12,6 @@ class Home extends Component {
         <div id="banner">
           <h1>Welcome to my site!</h1>
         </div>
-        <div id="banner">
-          <h1>Welcome to my site!</h1>
-        </div>
-        <div id="banner">
-          <h1>Welcome to my site!</h1>
-        </div>
-        <div id="banner">
-          <h1>Welcome to my site!</h1>
-        </div>
-        <div id="banner">
-          <h1>Welcome to my site!</h1>
-        </div>
-        <div id="banner">
-          <h1>Welcome to my site!</h1>
-        </div>
-        <Segment>Pellentesque habitant morbi tristique senectus.</Segment>
       </html>
     );
   }

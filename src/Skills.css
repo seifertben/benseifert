@@ -1,0 +1,23 @@
+#contentC h1 {
+    text-align: center;
+    font-family: 'Arvo';
+    font-size: 50px;
+    margin-left: 28%;
+    margin-right:28%;
+    margin-bottom:30px;
+    padding: 10px;
+    background-color: #ffffffc5;
+    border-radius: 5px;
+    border: 1px solid rgb(13, 14, 13);
+}
+
+p {
+    font-family: 'Domine';
+    font-size: 25px;  
+}
+
+#contentC {
+    padding:100px;
+    background-color: #ABEBD2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.9) inset;
+}
