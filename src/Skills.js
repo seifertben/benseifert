@@ -2,15 +2,31 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './Skills.css';
-import { Segment, Progress } from 'semantic-ui-react';
-
+import { Segment, Progress, Popup } from 'semantic-ui-react';
+import $ from 'jquery';
 
 class Skills extends Component {
   render() {
     return (
       <html>
         <div id="contentC">
-          <h1>My Skills</h1>
+          <h1 id="headerC" className="hvr-sweep-to-right">My Skills</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+             Quam adipiscing vitae proin sagittis. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Libero enim sed
+             faucibus turpis in. Volutpat sed cras ornare arcu.</p>
+
+          <div id="skilldock" className="hvr-glow">
+            <div className="tooltip"><img className="hvr-grow" src={require('./resources/swarm.png')} /><div id="entry"></div></div>
+            <div className="tooltip"><img className="hvr-grow" src={require('./resources/openshift.png')} /></div>
+            <div className="tooltip"><img className="hvr-grow" src={require('./resources/elastic.png')} /></div>
+            <div className="tooltip"><img className="hvr-grow" src={require('./resources/quantum.png')} /></div>
+            <div className="tooltip"><img className="hvr-grow" src={require('./resources/relativity.png')} /></div>
+            <div className="tooltip"><img className="hvr-grow" src={require('./resources/particles.png')} /></div>
+            <div className="tooltip"><img className="hvr-grow" src={require('./resources/fluids.png')} /></div>
+            <div className="tooltip"><img className="hvr-grow" src={require('./resources/hadoop.png')} /></div>
+            <div className="tooltip"><img className="hvr-grow" src={require('./resources/latex.png')} /></div>
+            <div className="tooltip"><img className="hvr-grow" src={require('./resources/electro.png')} /></div>
+          </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
              Quam adipiscing vitae proin sagittis. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Libero enim sed
              faucibus turpis in. Volutpat sed cras ornare arcu.
@@ -25,6 +41,11 @@ class Skills extends Component {
         </div>
       </html>
     );
+  }
+  componentDidMount() {
+    $("#headerC").click(function () {
+      document.getElementById("contentC").scrollIntoView();
+    });
   }
 }
 

@@ -9,6 +9,11 @@
     background-color: #ffffffc5;
     border-radius: 5px;
     border: 1px solid rgb(13, 14, 13);
+    overflow: hidden;
+}
+
+#contentB h1:hover {
+    cursor: pointer;
 }
 
 #contentB p {
@@ -22,7 +27,7 @@
 #contentB {
     padding:100px;
     background-color: #272D2D;
-    box-shadow: 0 0 10px rgba(0,0,0,0.9) inset;
+    border-top: 8px solid rgb(19, 22, 22);
 }
 
 #contentB #brown{
@@ -40,3 +45,70 @@
 #contentB #ed_details {
     font-size: 15px;
 }
+
+
+/* Sweep To Right */
+#contentB .hvr-sweep-to-right {
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  #contentB .hvr-sweep-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(14, 72, 99);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  #contentB .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+    color: white;
+  }
+  #contentB .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+
+    /* Mobile Compatibility */
+@media screen and (max-width:500px) {
+    #contentB h1 {
+      font-size: 25px;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    #contentB p{
+      font-size: 20px;
+    }
+
+    #contentB {
+        padding:20px;
+        padding-top:10px;    
+    }
+
+    #contentB #brown{
+        float:none;
+    }
+    
+    #contentB #nh{
+        float:none;
+    }
+  }

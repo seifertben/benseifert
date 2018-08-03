@@ -4,14 +4,22 @@ import AboutMe from './AboutMe.js'
 import Education from './Education.js'
 import Skills from './Skills.js'
 import Creations from './Creations.js'
-import Pdf from './Pdf.js'
+import Modal from './Modal.js'
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Button } from 'semantic-ui-react'
-import { Segment, Container, Header, Icon } from 'semantic-ui-react'
+import { Icon } from 'semantic-ui-react'
+import pdf from './resources/SeifertResume.pdf'
 import $ from 'jquery'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import ModalModalExample from './Modal.js';
+
 
 
 //import {Navbar, NavItem, NavDropdown, Nav, MenuItem, Jumbotron, Button} from 'react-bootstrap';
+var col = "yellow";
 
 class App extends Component {
   constructor(props) {
@@ -19,41 +27,63 @@ class App extends Component {
   }
 
   render() {
+    library.add(fab, faEnvelope);
+    const urlLinkedIn = "https://linkedin.com/in/ben-seifert-a57502128";
+    const urlGithub = "https://github.com/seifertben?tab=repositories";
     return (
       <html>
-        <div class="image">
+
+        <div id="mobilenav">
+          <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>About</li></a>
+                <a href="#"><li>Info</li></a>
+                <a href="#"><li>Contact</li></a>
+                <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+              </ul>
+            </div>
+          </nav>
+        </div>
+
+        <div className="image">
           <img src={require('./resources/mw-2mass.jpg')} />
-          <h1 id="name_title">Benjamin Seifert</h1>
+          <a href=""><h1 id="name_title">Benjamin Seifert</h1></a>
           <div id="navbar">
-            <a id="toplk" href="#top">About Me</a>
-            <a id="middlelk" href="#middle">Education</a>
-            <a id="bottomlk" href="#bottom">Skills</a>
-            <a id="bottomlk2" href="#bottom2">Creations</a>
-            <a href=""><Icon name='file outline' size='small'/>Resume</a>
+            <a id="toplk" href="#aboutme">About Me</a>
+            <a id="middlelk" href="#education">Education</a>
+            <a id="bottomlk" href="#skills">Skills</a>
+            <a id="bottomlk2" href="#creations">Creations</a>
+            <a href={pdf} target="_blank"><Icon name='file outline' size='small' />Resume</a>
             <div id="icons">
-            <a href=""><Icon color='yellow' name='mail' size="small"/></a>
-            <a href=""><Icon color='yellow' name='linkedin' size="small"/></a>
-            <a href=""><Icon color='yellow' name='github' size="small"/></a>
+              <a href={urlLinkedIn}><FontAwesomeIcon icon={['fab', 'linkedin']} id="iconic" size="1x" /></a>
+              <a href={urlGithub}><FontAwesomeIcon icon={['fab', 'github']} id="iconic" size="1x" /></a>
+              <a href=""><FontAwesomeIcon icon="envelope" id="iconic" size="1x" /></a>
             </div>
           </div>
         </div>
-        <div id="top"><AboutMe></AboutMe></div>
-        <div id="middle"><Education></Education></div>
-        <div id="bottom"><Skills></Skills></div>
-        <div id="bottom2"><Creations></Creations></div>
-        <footer><h3>Copyright Ben Seifert 2018</h3></footer>
+        <div id="aboutme"><AboutMe></AboutMe></div>
+        <div id="education"><Education></Education></div>
+        <div id="skills"><Skills></Skills></div>
+        <div id="creations"><Creations></Creations></div>
+        <footer><h3>Copyright© Ben Seifert 2018</h3></footer>
         <BrowserRouter>
           <Route path="/home" component={Home} />
         </BrowserRouter>
-        <BrowserRouter>
-        <Route path="/resume" component={Pdf} />
-        </BrowserRouter>
+
       </html >
     );
   }
-  
+
   componentDidMount() {
+
     var navbar = document.getElementById("navbar");
+
     //Make navbar transparent on initialization.
     navbar.classList.add("transparent");
 
@@ -71,27 +101,26 @@ class App extends Component {
       }
     }
     $(document).on('scroll', function () {
-      if ($(this).scrollTop() >= $('#top').offset().top) {
+      if ($(this).scrollTop() >= $("#aboutme").offset().top) {
         document.getElementById("toplk").style.backgroundColor = "black";
         document.getElementById("middlelk").style.removeProperty('background-color');
         document.getElementById("bottomlk").style.removeProperty('background-color');
         document.getElementById("bottomlk2").style.removeProperty('background-color');
       }
-      if ($(this).scrollTop() >= $('#middle').offset().top) {
+      if ($(this).scrollTop() >= $("#education").offset().top) {
         document.getElementById("toplk").style.removeProperty('background-color');
         document.getElementById("middlelk").style.backgroundColor = "black";
         document.getElementById("bottomlk").style.removeProperty('background-color');
         document.getElementById("bottomlk2").style.removeProperty('background-color');
-
       }
-      if ($(this).scrollTop() >= $('#bottom').offset().top) {
+      if ($(this).scrollTop() >= $("#skills").offset().top) {
         document.getElementById("toplk").style.removeProperty('background-color');
         document.getElementById("middlelk").style.removeProperty('background-color');
         document.getElementById("bottomlk2").style.removeProperty('background-color');
         document.getElementById("bottomlk").style.backgroundColor = "black";
 
       }
-      if ($(this).scrollTop() >= $('#bottom2').offset().top) {
+      if ($(this).scrollTop() >= $('#creations').offset().top) {
         document.getElementById("toplk").style.removeProperty('background-color');
         document.getElementById("middlelk").style.removeProperty('background-color');
         document.getElementById("bottomlk").style.removeProperty('background-color');
@@ -99,8 +128,21 @@ class App extends Component {
 
       }
     })
-    
+
+    $("#toplk").click(function () {
+      $("#toplk").css("backgroundColor", "black");
+    });
+    $("#middlelk").click(function () {
+      $("#middlelk").css("backgroundColor", "black");
+    });
+    $("bottomlk").click(function () {
+      $("#bottomlk").css("backgroundColor", "black");
+    });
+    $("#bottomlk2").click(function () {
+      $("#bottomlk2").css("backgroundColor", "black");
+    });
+
   }
-  
+
 }
 export default App;
