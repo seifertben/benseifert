@@ -55,7 +55,7 @@ class App extends Component {
     <div>My email is <a>benjamin_seifert@brown.edu</a>. Feel free to send me a message from your personal
       account, or from here!<br/><br/>
     </div>
-    <Form>
+    <Form method="POST" action="https://formspree.io/seifeben@gmail.com">
     <Form.Field>
       <label>Name</label>
       <input placeholder='name' />
