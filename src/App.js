@@ -4,9 +4,7 @@ import AboutMe from './AboutMe.js'
 import Education from './Education.js'
 import Skills from './Skills.js'
 import Creations from './Creations.js'
-import Modal from './Modal.js'
 import { BrowserRouter, Route } from 'react-router-dom';
-import { Button } from 'semantic-ui-react'
 import { Icon } from 'semantic-ui-react'
 import pdf from './resources/SeifertResume.pdf'
 import $ from 'jquery'
@@ -14,7 +12,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import ModalModalExample from './Modal.js';
+import { Button, Checkbox, Form } from 'semantic-ui-react'
 
 
 
@@ -32,7 +30,6 @@ class App extends Component {
     const urlGithub = "https://github.com/seifertben?tab=repositories";
     return (
       <html>
-
         <div id="mobilenav">
           <nav role="navigation">
             <div id="menuToggle">
@@ -41,15 +38,39 @@ class App extends Component {
               <span></span>
               <span></span>
               <ul id="menu">
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>About</li></a>
-                <a href="#"><li>Info</li></a>
-                <a href="#"><li>Contact</li></a>
-                <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+                <a href="#aboutme"><li>About Me</li></a>
+                <a href="#education"><li>Education</li></a>
+                <a href="#skills"><li>Skills</li></a>
+                <a href="#creations"><li>Creations</li></a>
               </ul>
             </div>
           </nav>
         </div>
+
+<div id="modal">
+<div id="open-modal" className="modal-window">
+  <div>
+    <a href="#modal-close" title="Close" className="modal-close">Close</a>
+    <h1>Send me a Message!</h1>
+    <div>My email is <a>benjamin_seifert@brown.edu</a>. Feel free to send me a message from your personal
+      account, or from here!<br/><br/>
+    </div>
+    <Form>
+    <Form.Field>
+      <label>Name</label>
+      <input placeholder='name' />
+    </Form.Field>
+    <Form.Field>
+      <label>Subject</label>
+      <input placeholder='subject' />
+    </Form.Field>
+    <Form.TextArea label='Message' />
+    <Button type='submit'>Submit</Button>
+  </Form>
+    </div>
+</div>
+</div>
+
 
         <div className="image">
           <img src={require('./resources/mw-2mass.jpg')} />
@@ -63,7 +84,7 @@ class App extends Component {
             <div id="icons">
               <a href={urlLinkedIn}><FontAwesomeIcon icon={['fab', 'linkedin']} id="iconic" size="1x" /></a>
               <a href={urlGithub}><FontAwesomeIcon icon={['fab', 'github']} id="iconic" size="1x" /></a>
-              <a href=""><FontAwesomeIcon icon="envelope" id="iconic" size="1x" /></a>
+              <a href="#open-modal"><FontAwesomeIcon icon="envelope" id="iconic" size="1x" /></a>
             </div>
           </div>
         </div>

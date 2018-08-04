@@ -36,21 +36,6 @@
     border-top: 8px solid rgb(78, 27, 32);
 }
 
-#contentD #brown{
-    width:300px;
-    height:150px;
-    float: right;
-}
-
-#contentD #nh{
-    width:150px;
-    height:150px;
-    float: right;
-}
-
-#contentD #ed_details {
-    font-size: 15px;
-}
 
 #contentD img {
     width:100%;
@@ -139,6 +124,7 @@
       font-size: 25px;
       margin-left: 0px;
       margin-right: 0px;
+      margin-top:10px;
     }
     #contentD p{
       font-size: 20px;
@@ -149,7 +135,10 @@
         padding-top:10px;    
     }
     #contentD .card {
-        display: none;
+        display:block;
+        width:80%;
+        margin: auto;
+        margin-bottom: 20px;
     }
   }
 

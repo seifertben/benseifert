@@ -16,7 +16,7 @@ class Skills extends Component {
              faucibus turpis in. Volutpat sed cras ornare arcu.</p>
 
           <div id="skilldock" className="hvr-glow">
-            <div className="tooltip"><img className="hvr-grow" src={require('./resources/swarm.png')} /><div id="entry"></div></div>
+            <div className="tooltip"><img id="1" className="hvr-grow" src={require('./resources/swarm.png')} /><div id="entry1"></div></div>
             <div className="tooltip"><img className="hvr-grow" src={require('./resources/openshift.png')} /></div>
             <div className="tooltip"><img className="hvr-grow" src={require('./resources/elastic.png')} /></div>
             <div className="tooltip"><img className="hvr-grow" src={require('./resources/quantum.png')} /></div>

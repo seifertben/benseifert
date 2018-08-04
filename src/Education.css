@@ -94,6 +94,7 @@
       font-size: 25px;
       margin-left: 0px;
       margin-right: 0px;
+      margin-top:10px;
     }
     #contentB p{
       font-size: 20px;
@@ -106,9 +107,24 @@
 
     #contentB #brown{
         float:none;
+        margin: auto;
+        margin-top:10px;
     }
     
     #contentB #nh{
         float:none;
+        margin: auto;
+        margin-top:10px;
+    }
+
+    #contentB #heducation {
+        margin-bottom: 20px;
+    }
+
+    #contentB #ed_details {
+        padding:5px;
+        border-radius: 5px;
+        margin-bottom: 0px;
+        border: 1px solid white;
     }
   }

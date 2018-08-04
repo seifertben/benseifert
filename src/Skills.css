@@ -113,17 +113,14 @@ p {
 
 #skilldock .tooltip {
     margin-top:5px;
-    margin-left: 0.8%;
-    margin-right: 0.8%;
+    margin-left: 0.9%;
+    margin-right: 0.9%;
     width:7%;
     display: inline-block;
 }
 
-#entry {
+#entry1 {
     display: none;
-}
-
-.tooltip:hover #entry {
 }
 
     /* Mobile Compatibility */
@@ -132,6 +129,7 @@ p {
       font-size: 25px;
       margin-left: 0px;
       margin-right: 0px;
+      margin-top:10px;
     }
     #contentC p{
       font-size: 20px;
@@ -140,5 +138,9 @@ p {
     #contentC {
         padding:20px;
         padding-top:10px;    
+    }
+
+    #contentC #skilldock {
+        display: none;
     }
   }
