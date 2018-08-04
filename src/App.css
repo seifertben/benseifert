@@ -159,11 +159,11 @@ footer {
 #menuToggle input
 {
   display: block;
-  width: 40px;
-  height: 32px;
+  width: 80px;
+  height: 100%;
   position: absolute;
-  top: -7px;
-  left: -5px;
+  top: 0px;
+  left: 0px;
   
   cursor: pointer;
   
@@ -242,7 +242,7 @@ footer {
 {
   position: absolute;
   width: 100%;
-  margin: -100px 0 0 -50px;
+  margin: -100px 0 0 -20px;
   padding: 50px;
   padding-top: 125px;
   

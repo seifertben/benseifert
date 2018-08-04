@@ -1,13 +1,15 @@
 {
-  "name": "new-app",
+  "name": "benseifert",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://seifertben.github.io/benseifert",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.0-14",
     "@fortawesome/free-brands-svg-icons": "^5.1.0-11",
     "@fortawesome/free-solid-svg-icons": "^5.1.0-11",
     "@fortawesome/react-fontawesome": "0.1.0-11",
     "animate.css": "^3.7.0",
+    "gh-pages": "^1.2.0",
     "hover.css": "^2.3.2",
     "i": "^0.3.6",
     "jquery": "^3.3.1",
@@ -26,6 +28,8 @@
     "semantic-ui-react": "^0.82.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
