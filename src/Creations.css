@@ -77,6 +77,11 @@
     text-align:center;
 }
 
+#contentD #mobilecards {
+    /* display: none; */
+    display: none;
+}
+
 
 /* Sweep To Right */
 #contentD .hvr-sweep-to-right {
@@ -119,7 +124,7 @@
 
 
     /* Mobile Compatibility */
-@media screen and (max-width:500px) {
+@media screen and (max-width:500px){
     #contentD h1 {
       font-size: 25px;
       margin-left: 0px;
@@ -136,9 +141,29 @@
     }
     #contentD .card {
         display:block;
-        width:80%;
+        width:100%;
+        height: 150px;
         margin: auto;
         margin-bottom: 20px;
+    }
+
+    #contentD #cards {
+        display: none;
+    }
+
+    #contentD #mobilecards {
+        display: block;
+    }
+    #contentD img {
+        width:30%;
+        height: 100%;
+        float:left;
+
+    }
+    #contentD .container {
+        float:left;
+        width: 70%;
+        height:100%;
     }
   }
 

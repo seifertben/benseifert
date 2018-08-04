@@ -42,6 +42,30 @@ class Creations extends Component {
             </div></a>
           </div>
 
+          <div id="mobilecards">
+            <a href=""><div className="card">
+              <img src={require('./resources/Linux-Shell.png')} />
+              <div className="container">
+                <h2><b>Shell</b></h2>
+                <p className="cardinfo">A program that emulates the bash shell. Runs inside the bash shell and executes bash commands. Written in C.</p>
+              </div>
+            </div></a>
+            <a href=""><div className="card">
+              <img src={require('./resources/risk_nobg.png')} />
+              <div className="container">
+                <h2><b>Risk</b></h2>
+                <p className="cardinfo">The classic board game implemented as a web application. Also one of my favorite games.</p>
+              </div>
+            </div></a>
+            <a href=""><div className="card">
+              <img src={require('./resources/fitbit_nobg.png')} />
+              <div className="container">
+                <h2><b>Buddy</b></h2>
+                <p className="cardinfo">Second place corporate Hackathon project that helps children manage chronic diseases.</p>
+              </div>
+            </div></a>
+          </div>
+
                     
         </div>
       </html>
