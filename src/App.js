@@ -47,29 +47,32 @@ class App extends Component {
           </nav>
         </div>
 
-<div id="modal">
-<div id="open-modal" className="modal-window">
-  <div>
-    <a href="#modal-close" title="Close" className="modal-close">Close</a>
-    <h1>Send me a Message!</h1>
-    <div>My email is <a>benjamin_seifert@brown.edu</a>. Feel free to send me a message from your personal
-      account, or from here!<br/><br/>
-    </div>
-    <Form method="POST" action="https://formspree.io/seifeben@gmail.com">
-    <Form.Field>
-      <label>Name</label>
-      <input placeholder='name' />
-    </Form.Field>
-    <Form.Field>
-      <label>Subject</label>
-      <input placeholder='subject' />
-    </Form.Field>
-    <Form.TextArea label='Message' />
-    <Button type='submit'>Submit</Button>
-  </Form>
-    </div>
-</div>
-</div>
+        <div id="modal">
+          <div id="open-modal" className="modal-window">
+            <div>
+              <a href="#modal-close" title="Close" className="modal-close">Close</a>
+              <h1>Send me a Message!</h1>
+              <div>My email is <a>benjamin_seifert@brown.edu</a>. Feel free to send me a message from your personal
+      account, or from here!<br /><br />
+              </div>
+              <form className="ui form" method="POST" action="https://formspree.io/seifeben@gmail.com">
+                <Form.Field>
+                  <label>Your Email</label>
+                  <input type="email" name="email" />
+                </Form.Field>
+                <Form.Field>
+                  <label>Subject</label>
+                  <input type="text" name="subject" />
+                </Form.Field>
+                <Form.Field>
+                <label>Message</label>
+                <textarea rows="4" className="ui textarea" name="message" placeholder="Your message"></textarea>
+                </Form.Field>
+                <Button type='submit'>Submit</Button>
+              </form>
+            </div>
+          </div>
+        </div>
 
 
         <div className="image">

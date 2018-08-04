@@ -27,6 +27,29 @@ class Skills extends Component {
             <div className="tooltip"><img className="hvr-grow" src={require('./resources/latex.png')} /></div>
             <div className="tooltip"><img className="hvr-grow" src={require('./resources/electro.png')} /></div>
           </div>
+
+          <div id="skilldockmobile">
+            <div id="row1">
+              <img src={require('./resources/swarm.png')} />
+              <img src={require('./resources/openshift.png')} />
+              <img src={require('./resources/elastic.png')} />
+            </div>
+            <div id="row2">
+              <img src={require('./resources/quantum.png')} />
+              <img src={require('./resources/relativity.png')} />
+              <img src={require('./resources/particles.png')} />
+            </div>
+            <div id="row3">
+              <img src={require('./resources/fluids.png')} />
+              <img src={require('./resources/hadoop.png')} />
+              <img src={require('./resources/latex.png')} />
+            </div>
+            <div id="row3">
+              <img src={require('./resources/electro.png')} />
+            </div>
+
+          </div>
+
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
              Quam adipiscing vitae proin sagittis. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Libero enim sed
              faucibus turpis in. Volutpat sed cras ornare arcu.

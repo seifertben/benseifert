@@ -119,10 +119,10 @@ p {
     display: inline-block;
 }
 
-#entry1 {
+#contentC #skilldockmobile {
     display: none;
+        
 }
-
     /* Mobile Compatibility */
 @media screen and (max-width:500px) {
     #contentC h1 {
@@ -142,5 +142,42 @@ p {
 
     #contentC #skilldock {
         display: none;
+    }
+
+    #contentC #skilldockmobile {
+        display: block;
+    }
+
+    #contentC #row1{
+        display: block;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    #contentC #row2{
+        display: block; 
+        text-align: left; 
+        margin-bottom: 20px;
+    }
+
+    #contentC #row3{
+        display: block; 
+        text-align: center; 
+        margin-bottom: 20px;
+    }
+
+    #contentC #row4{
+        display: block; 
+        text-align: center; 
+        margin-bottom: 20px;
+    }
+
+    #contentC img {
+        width:27%;
+        height:85px;
+        margin-top:5px;
+        margin-left: 3%;
+        margin-right: 3%;
+        display: inline-block;
     }
   }
