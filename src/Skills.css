@@ -130,6 +130,7 @@ p {
       margin-left: 0px;
       margin-right: 0px;
       margin-top:10px;
+      margin-bottom: 50px;
     }
     #contentC p{
       font-size: 20px;
@@ -137,7 +138,7 @@ p {
 
     #contentC {
         padding:20px;
-        padding-top:10px;    
+        padding-top:50px;    
     }
 
     #contentC #skilldock {

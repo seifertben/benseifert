@@ -11,13 +11,10 @@ class Creations extends Component {
       <html>
         <div id="contentD">
           <h1 id="headerD" className="hvr-sweep-to-right">My Creations</h1>
-          <p id="dinfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-             Quam adipiscing vitae proin sagittis. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus. Libero enim sed
-             faucibus turpis in. Volutpat sed cras ornare arcu.
-             Pharetra massa massa ultricies mi quis hendrerit dolor. Posuere ac ut consequat semper. Sem
-             et tortor consequat id. Diam in arcu cursus euismod quis viverra nibh. Commodo ullamcorper a
-             lacus vestibulum sed arcu non. Nulla malesuada pellentesque elit eget. Metus dictum at tempor
-             commodo ullamcorper a. Sagittis nisl rhoncus mattis rhoncus urna neque. </p>
+          <p id="dinfo">The last thing I'd like to talk about is some of the things I've made. I included a couple of these
+          projects below. You can click on them to see more. I have made the code available for some. I have
+          restricted others to respect collaboration policies. You can request the code for any however if you'd like
+          to see it.  </p>
           <div id="cards">
             <a href=""><div className="card">
               <img src={require('./resources/Linux-Shell.png')} />
@@ -26,11 +23,11 @@ class Creations extends Component {
                 <p className="cardinfo">A program that emulates the bash shell. Runs inside the bash shell and executes bash commands. Written in C.</p>
               </div>
             </div></a>
-            <a href=""><div className="card">
+            <a href="http://tundraboygames.com/risk"><div className="card">
               <img src={require('./resources/risk_nobg.png')} />
               <div className="container">
                 <h2><b>Risk</b></h2>
-                <p className="cardinfo">The classic board game implemented as a web application. Also one of my favorite games.</p>
+                <p className="cardinfo">The classic board game implemented as a web application.  Also one of my favorite games. Click to play it. See my <a href="https://github.com/seifertben/Risk">github account</a> for code.</p>
               </div>
             </div></a>
             <a href=""><div className="card">
@@ -50,7 +47,7 @@ class Creations extends Component {
                 <p className="cardinfo">A program that emulates the bash shell. Runs inside the bash shell and executes bash commands. Written in C.</p>
               </div>
             </div></a>
-            <a href=""><div className="card">
+            <a href="http://tundraboygames.com/risk"><div className="card">
               <img src={require('./resources/risk_nobg.png')} />
               <div className="container">
                 <h2><b>Risk</b></h2>
