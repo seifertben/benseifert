@@ -14,7 +14,8 @@ class Creations extends Component {
           <p id="dinfo">The last thing I'd like to talk about is some of the things I've made. I included a couple of these
           projects below. You can click on them to see more. I have made the code available for some. I have
           restricted others to respect collaboration policies. You can request the code for any however if you'd like
-          to see it.  </p>
+          to see it. Note that I've written code for countless applications. I couldn't include it all here,
+          but more is definitely available upon request. </p>
           <div id="cards">
             <a href=""><div className="card">
               <img src={require('./resources/Linux-Shell.png')} />
@@ -30,11 +31,12 @@ class Creations extends Component {
                 <p className="cardinfo">The classic board game implemented as a web application.  Also one of my favorite games. Click to play it. See my <a href="https://github.com/seifertben/Risk">github account</a> for code.</p>
               </div>
             </div></a>
-            <a href=""><div className="card">
-              <img src={require('./resources/fitbit_nobg.png')} />
+            <a href="https://drive.google.com/open?id=1cC5lLiWxmCN-OUWNUi2fXXcdRSJjZHQC"><div className="card">
+              <img src={require('./resources/mars.png')} />
               <div className="container">
-                <h2><b>Buddy</b></h2>
-                <p className="cardinfo">Second place corporate Hackathon project that helps children manage chronic diseases.</p>
+              <h2><b>Physics Stuff</b></h2>
+                <p className="cardinfo">No, I didn't create Mars. But why not choose Earth's closest relative as inspiration for
+                what the future could hold? Click this card to link to a portfolio of scientific papers.</p>
               </div>
             </div></a>
           </div>
@@ -54,26 +56,27 @@ class Creations extends Component {
                 <p className="cardinfo">The classic board game implemented as a web application. Also one of my favorite games.</p>
               </div>
             </div></a>
-            <a href=""><div className="card">
-              <img src={require('./resources/fitbit_nobg.png')} />
+            <a href="https://drive.google.com/open?id=1cC5lLiWxmCN-OUWNUi2fXXcdRSJjZHQC"><div className="card">
+              <img src={require('./resources/mars.png')} />
               <div className="container">
-                <h2><b>Buddy</b></h2>
-                <p className="cardinfo">Second place corporate Hackathon project that helps children manage chronic diseases.</p>
+                <h2><b>Physics Stuff</b></h2>
+                <p className="cardinfo">No, I didn't create Mars. But why not choose Earth's closest relative as inspiration for
+                what the future could hold? Click this card to link to a portfolio of scientific papers.</p>
               </div>
             </div></a>
           </div>
 
-                    
+
         </div>
       </html>
     );
   }
   componentDidMount() {
-    $( "#headerD" ).click(function() {
+    $("#headerD").click(function () {
       document.getElementById("contentD").scrollIntoView();
     });
-  } 
-  
+  }
+
 }
 
 export default Creations

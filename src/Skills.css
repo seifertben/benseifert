@@ -37,8 +37,71 @@ p {
     border-radius:100px;
     background-color:rgb(255, 164, 27);
     margin-top:10px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-align: center;
+}
+
+#contentC .tooler {
+    position: absolute;
+    bottom: -40px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    visibility: hidden;
+    padding-left: 2px;
+    padding-right: 2px;
+    opacity: 0.7;
+}
+
+#toola:hover + #tool1 {
+    visibility: visible;
+    transition: 2s ease-in;
+
+}
+
+#toolb:hover + #tool2 {
+    visibility: visible;
+
+}
+#toolc:hover + #tool3 {
+    visibility: visible;
+
+}
+
+#toold:hover + #tool4 {
+    visibility: visible;
+
+}
+
+#toole:hover + #tool5 {
+    visibility: visible;
+
+}
+
+#toolf:hover + #tool6 {
+    visibility: visible;
+
+}
+
+#toolg:hover + #tool7 {
+    visibility: visible;
+
+}
+
+#toolh:hover + #tool8 {
+    visibility: visible;
+
+}
+
+#tooli:hover + #tool9 {
+    visibility: visible;
+
+}
+
+#toolj:hover + #tool10 {
+    visibility: visible;
+
 }
 
 /* Sweep To Right */
@@ -117,6 +180,7 @@ p {
     margin-right: 0.9%;
     width:7%;
     display: inline-block;
+    position: relative;
 }
 
 #contentC #skilldockmobile {

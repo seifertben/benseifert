@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './AboutMe.css';
 import $ from 'jquery'
+import pdf from './resources/SeifertResume.pdf'
 
 
 class AboutMe extends Component {
@@ -17,7 +18,7 @@ class AboutMe extends Component {
           <p>Hi there! I'm a student at Brown University studying physics and computer science, my two
             primary interests. I'm orginally from the Appalachian foothills of Mayland, but spend most of
             my time now in New England. Feel free to scroll through this site to learn a little bit more about me
-            and my work. You can also find my resume attached at the top. 
+            and my work. You can also find my <a href={pdf} target="_blank">resume</a> attached at the top. 
             When I'm not solving physics problems or coding on my laptop, I might be hiking
             in the white mountains or travelling to foreign countries. My travel has brought me to places
             as far flung as Morocco and Australia. I'm always seeking adventure. During the summer of 2017, I travelled
