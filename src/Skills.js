@@ -19,22 +19,22 @@ class Skills extends Component {
           </p>
 
           <div id="skilldock" className="hvr-glow">
-            <div className="tooltip"><img id="toola" className="hvr-grow" src={require('./resources/swarm.png')} /><div id="tool1" className="tooler"><span>Docker</span></div></div>
-            <div className="tooltip"><img id="toolb" className="hvr-grow" src={require('./resources/openshift.png')} /><div id="tool2" className="tooler"><span>Openshift</span></div></div>
+            <div className="tooltip"><img id="toolb" className="hvr-grow" src={require('./resources/stocks.png')} /><div id="tool2" className="tooler"><span>Investments</span></div></div>
             <div className="tooltip"><img id="toolc" className="hvr-grow" src={require('./resources/elastic.png')} /><div id="tool3" className="tooler"><span>Elasticsearch</span></div></div>
+            <div className="tooltip"><img id="toolh" className="hvr-grow" src={require('./resources/hadoop.png')} /><div id="tool8" className="tooler"><span>Hadoop</span></div></div>
+            <div className="tooltip"><img id="toola" className="hvr-grow" src={require('./resources/swarm.png')} /><div id="tool1" className="tooler"><span>Docker</span></div></div>
             <div className="tooltip"><img id="toold" className="hvr-grow" src={require('./resources/quantum.png')} /><div id="tool4" className="tooler"><span>Quantum Mechanics</span></div></div>
             <div className="tooltip"><img id="toole" className="hvr-grow" src={require('./resources/relativity.png')} /><div id="tool5" className="tooler"><span>Relativity</span></div></div>
             <div className="tooltip"><img id="toolf" className="hvr-grow" src={require('./resources/particles.png')} /><div id="tool6" className="tooler"><span>Particle Physics</span></div></div>
             <div className="tooltip"><img id="toolg" className="hvr-grow" src={require('./resources/fluids.png')} /><div id="tool7" className="tooler"><span>Fluid Dynamics</span></div></div>
-            <div className="tooltip"><img id="toolh" className="hvr-grow" src={require('./resources/hadoop.png')} /><div id="tool8" className="tooler"><span>Hadoop</span></div></div>
-            <div className="tooltip"><img id="tooli" className="hvr-grow" src={require('./resources/latex.png')} /><div id="tool9" className="tooler"><span>Latex</span></div></div>
             <div className="tooltip"><img id="toolj" className="hvr-grow" src={require('./resources/electro.png')} /><div id="tool10" className="tooler"><span>Electrodynamics</span></div></div>
+            <div className="tooltip"><img id="tooli" className="hvr-grow" src={require('./resources/weather.png')} /><div id="tool9" className="tooler"><span>Atmospheric Science</span></div></div>
           </div>
 
           <div id="skilldockmobile">
             <div id="row1">
               <img src={require('./resources/swarm.png')} />
-              <img src={require('./resources/openshift.png')} />
+              <img src={require('./resources/stocks.png')} />
               <img src={require('./resources/elastic.png')} />
             </div>
             <div id="row2">
@@ -45,7 +45,7 @@ class Skills extends Component {
             <div id="row3">
               <img src={require('./resources/fluids.png')} />
               <img src={require('./resources/hadoop.png')} />
-              <img src={require('./resources/latex.png')} />
+              <img src={require('./resources/weather.png')} />
             </div>
             <div id="row3">
               <img src={require('./resources/electro.png')} />

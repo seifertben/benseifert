@@ -17,11 +17,11 @@ class Creations extends Component {
           to see it. Note that I've written code for countless applications. I couldn't include it all here,
           but more is definitely available upon request. </p>
           <div id="cards">
-            <a href=""><div className="card">
+            <a href="http://cs.brown.edu/courses/cs033/docs/proj/shell_1.pdf"><div className="card">
               <img src={require('./resources/Linux-Shell.png')} />
               <div className="container">
                 <h2><b>Shell</b></h2>
-                <p className="cardinfo">A program that emulates the bash shell. Runs inside the bash shell and executes bash commands. Written in C.</p>
+                <p className="cardinfo">A program that emulates the bash shell. Runs inside the bash shell and executes bash commands. Written in C. Click for project description. Message for code.</p>
               </div>
             </div></a>
             <a href="http://tundraboygames.com/risk"><div className="card">
@@ -42,11 +42,11 @@ class Creations extends Component {
           </div>
 
           <div id="mobilecards">
-            <a href=""><div className="card">
+            <a href="http://cs.brown.edu/courses/cs033/docs/proj/shell_1.pdf"><div className="card">
               <img src={require('./resources/Linux-Shell.png')} />
               <div className="container">
                 <h2><b>Shell</b></h2>
-                <p className="cardinfo">A program that emulates the bash shell. Runs inside the bash shell and executes bash commands. Written in C.</p>
+                <p className="cardinfo">A program that emulates the bash shell. Runs inside the bash shell and executes bash commands. Written in C. Click for project description. Message for code.</p>
               </div>
             </div></a>
             <a href="http://tundraboygames.com/risk"><div className="card">

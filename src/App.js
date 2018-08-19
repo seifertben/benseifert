@@ -6,7 +6,7 @@ import Skills from './Skills.js'
 import Creations from './Creations.js'
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Icon } from 'semantic-ui-react'
-import pdf from './resources/SeifertResume.pdf'
+import pdf from './resources/SeifertResumeNew.pdf'
 import $ from 'jquery'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
