@@ -1,10 +1,11 @@
 {
-  "main.css": "static/css/main.0ae49da1.css",
-  "main.css.map": "static/css/main.0ae49da1.css.map",
-  "main.js": "static/js/main.82007320.js",
-  "main.js.map": "static/js/main.82007320.js.map",
+  "main.css": "static/css/main.cf0bdb61.css",
+  "main.css.map": "static/css/main.cf0bdb61.css.map",
+  "main.js": "static/js/main.cf6c3822.js",
+  "main.js.map": "static/js/main.cf6c3822.js.map",
   "static\\media\\Linux-Shell.png": "static/media/Linux-Shell.01e5f554.png",
   "static\\media\\SeifertResume.pdf": "static/media/SeifertResume.598e97da.pdf",
+  "static\\media\\SeifertResumeNew.pdf": "static/media/SeifertResumeNew.a067c349.pdf",
   "static\\media\\brand-icons.eot": "static/media/brand-icons.13db00b7.eot",
   "static\\media\\brand-icons.svg": "static/media/brand-icons.a1a749e8.svg",
   "static\\media\\brand-icons.ttf": "static/media/brand-icons.c5ebe0b3.ttf",
@@ -20,12 +21,10 @@
   "static\\media\\icons.ttf": "static/media/icons.b87b9ba5.ttf",
   "static\\media\\icons.woff": "static/media/icons.faff9214.woff",
   "static\\media\\icons.woff2": "static/media/icons.0ab54153.woff2",
-  "static\\media\\latex.png": "static/media/latex.67d0c407.png",
   "static\\media\\logo.svg": "static/media/logo.5d5d9eef.svg",
   "static\\media\\mars.png": "static/media/mars.99b252cc.png",
   "static\\media\\mw-2mass.jpg": "static/media/mw-2mass.7fb53ffd.jpg",
   "static\\media\\nh.jpg": "static/media/nh.5226c242.jpg",
-  "static\\media\\openshift.png": "static/media/openshift.10c3b0cf.png",
   "static\\media\\outline-icons.eot": "static/media/outline-icons.701ae6ab.eot",
   "static\\media\\outline-icons.svg": "static/media/outline-icons.82f60bd0.svg",
   "static\\media\\outline-icons.ttf": "static/media/outline-icons.ad97afd3.ttf",
@@ -37,5 +36,7 @@
   "static\\media\\relativity.png": "static/media/relativity.3b98c903.png",
   "static\\media\\risk_nobg.png": "static/media/risk_nobg.9979caa4.png",
   "static\\media\\shield.png": "static/media/shield.78ac70dc.png",
-  "static\\media\\swarm.png": "static/media/swarm.4c3f8491.png"
+  "static\\media\\stocks.png": "static/media/stocks.67ea37fa.png",
+  "static\\media\\swarm.png": "static/media/swarm.4c3f8491.png",
+  "static\\media\\weather.png": "static/media/weather.88890b5f.png"
 }
