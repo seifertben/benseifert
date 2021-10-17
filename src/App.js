@@ -6,7 +6,7 @@ import Skills from './Skills.js'
 import Creations from './Creations.js'
 import { BrowserRouter, Route } from 'react-router-dom';
 import { Icon } from 'semantic-ui-react'
-import pdf from './resources/SeifertResumeNew.pdf'
+import pdf from './resources/Resume.pdf'
 import $ from 'jquery'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -52,7 +52,7 @@ class App extends Component {
             <div>
               <a href="#modal-close" title="Close" className="modal-close">Close</a>
               <h1>Send me a Message!</h1>
-              <div>My email is <a>benjamin_seifert@brown.edu</a>. Feel free to send me a message from your personal
+              <div>My email is <a>seifeben@gmail.com</a>. Feel free to send me a message from your personal
       account, or from here!<br /><br />
               </div>
               <form className="ui form" method="POST" action="https://formspree.io/seifeben@gmail.com">

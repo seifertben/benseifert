@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './AboutMe.css';
 import $ from 'jquery'
-import pdf from './resources/SeifertResume.pdf'
+import pdf from './resources/Resume.pdf'
 
 
 class AboutMe extends Component {
