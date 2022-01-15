@@ -16,7 +16,7 @@ class AboutMe extends Component {
           <h1 id="headerA" className="hvr-sweep-to-right animated slideInLeft delay-2s">Welcome to my site!</h1>
           <img className="animated slideInRight delay-2s" src={require('./resources/personal.jpg')} />
           <p>Hi there! I'm a student at Brown University studying physics and computer science, my two
-            primary interests. I'm orginally from the Appalachian foothills of Mayland, but spend most of
+            primary interests. I'm orginally from the Appalachian foothills of Maryland, but spend most of
             my time now in New England. Feel free to scroll through this site to learn a little bit more about me
             and my work. You can also find my <a href={pdf} target="_blank">resume</a> attached at the top. 
             When I'm not solving physics problems or coding on my laptop, I might be hiking
